@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+<div class="card p-4 mb-3">
+    <!-- Breve Descripción de Servicios -->
+    <div class="mb-4">
+        <h2>Servicios de Tech Legal Solutions</h2>
+        <p>En Tech Legal Solutions, ofrecemos servicios de asesoría en <strong>privacidad de datos</strong>, <strong>derechos de autor</strong> y <strong>cumplimiento normativo</strong> para empresas tecnológicas. Nuestra misión es ayudarte a proteger la información de tus usuarios y asegurar que tu negocio cumpla con las regulaciones legales en cada etapa.</p>
+        <a href="@Url.Action("Servicios", "Home")" class="btn btn-primary">Conoce Nuestros Servicios</a>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <h3>Testimonios de Clientes</h3>
+    <p>Lo que nuestros clientes dicen sobre nosotros:</p>
+    <div class="d-flex align-items-center">
+        <span class="me-2 text-danger"><i class="bi bi-heart-fill"></i> 36</span>
+        <a href="#" class="text-primary">Ver comentarios</a>
+    </div>
+
+    <!-- Testimonio 1 -->
+    <div class="mt-4">
+        <div class="d-flex align-items-start mb-3">
+            <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle me-3">
+            <div>
+                <h6 class="mb-1">– CEO de Startup Tech</h6>
+                <p class="mb-1">
+                    "Gracias a Tech Legal Solutions, pudimos cumplir con todas las normativas de privacidad en Europa. Nos guiaron en cada paso, lo que nos permitió lanzar nuestro producto sin preocupaciones legales."
+                </p>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-warning btn-sm me-2"><i class="bi bi-pencil"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="d-flex align-items-start mb-3">
+            <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle me-3">
+            <div>
+                <h6 class="mb-1">– Fundador de Empresa de Desarrollo de Software</h6>
+                <p class="mb-1">
+                    "Su asesoría en derechos de autor fue invaluable para proteger nuestro software. Ahora sabemos que nuestras innovaciones están seguras."
+                </p>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-warning btn-sm me-2"><i class="bi bi-pencil"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="d-flex align-items-start mb-3">
+            <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle me-3">
+            <div>
+                <h6 class="mb-1">– Director de Producto en Empresa Fintech</h6>
+                <p class="mb-1">
+                    "La evaluación de cumplimiento normativo nos ayudó a mejorar la transparencia y la seguridad de nuestros usuarios, lo que incrementó la confianza en nuestro servicio."
+                </p>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-warning btn-sm me-2"><i class="bi bi-pencil"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input para nuevo comentario -->
+        <div class="mt-4">
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Escribe tu comentario">
+                <button class="btn btn-primary"><i class="bi bi-send"></i></button>
+            </div>
+        </div>
+
+        <!-- Botón para redirigir a Contact/Home -->
+        <div class="mt-4 text-center">
+            <p>Descubre cómo podemos ayudarte a cumplir con la normativa y proteger tu negocio. ¡Agenda una consulta gratuita hoy mismo!</p>
+            <a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Ir a Contacto</a>
+        </div>
+    </div>
+</div>
